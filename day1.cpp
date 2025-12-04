@@ -2,9 +2,9 @@
 #include <fstream>
 #include <sstream>
 
-std::string parse_input(std::string str)
+int get_result(std::string str)
 {
-    return str;
+    return 0;
 }
 
 int main(void)
@@ -13,5 +13,6 @@ int main(void)
     std::stringstream buffer;
     buffer << file.rdbuf();
 
-    std::cout << parse_input(buffer.str()) << std::endl;
+    std::cout << buffer.str() << std::endl;
+    std::cout << get_result(buffer.str()) << std::endl;
 }
